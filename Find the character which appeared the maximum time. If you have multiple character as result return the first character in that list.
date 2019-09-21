@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char s[100]; int g[100],f[100];
+    int a,i,j,c=0,d,e=0,b;
+    gets(s);
+    a=strlen(s);
+   for(i=0;i<a;i++)
+   {
+       g[i]=0;
+      for(j=i+1;j<a;j++)
+      {
+          if(s[i]==s[j])
+          {
+          g[i]++;
+          }
+      }
+   }
+   for(b=0;b<a;b++)
+   {
+       if(g[e]<g[b])
+       e=b;
+   }
+   printf("%c",s[e]);
+}
