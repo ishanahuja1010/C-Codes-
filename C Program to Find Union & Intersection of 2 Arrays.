@@ -1,0 +1,49 @@
+#include <stdio.h>
+int main()
+{
+    int a[100],b[100],c[100],d[100],e=0,f=0,i,j,n1,n2,n;
+    scanf("%d",&n1);
+    for(i=0;i<n1;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    scanf("%d",&n2);
+     for(i=0;i<n2;i++)
+    {
+        scanf("%d",&b[i]);
+    }
+    for(i=0;i<n1 && i<n2;i++)
+    {
+        for(j=0;j<n1 && j<n2;j++)
+        if(a[i]==b[j])
+        {
+            b[j]=-1;
+        c[f]=a[i];
+        f++;
+        }
+        
+    }
+    for(i=0;i<n1;i++)
+    {
+        d[e]=a[i];
+        e++;
+    }
+     for(i=0;i<n2;i++)
+    {
+        d[e]=b[i];
+        e++;
+    }
+    n=n1+n2;
+    printf("Union ");
+     for(i=0;i<n;i++)
+    {
+        if(d[i]!=-1)
+        printf("%d ",d[i]);
+    }
+    printf("\n");
+    printf("Intersection ");
+     for(i=0;i<f;i++)
+    {
+        printf("%d ",c[i]);
+    }
+}
