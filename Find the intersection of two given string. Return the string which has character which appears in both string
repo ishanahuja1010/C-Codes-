@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char s[100],g[100],f[100];
+    int a,i,j,c=0,d,e=0,b;
+    gets(s);
+    gets(g);
+    a=strlen(s);
+    b=strlen(g);
+   for(i=0;i<a;i++)
+   {
+       for(j=0;j<b;j++)
+       {
+       if(s[i]==g[j])
+       {
+           f[c]=s[i];
+           c++;
+       }
+       }
+   }
+   if(c==0)
+   printf("null");
+   else
+   {
+   for(i=0;i<c;i++)
+   {
+   if(f[i]!=f[i+1])
+   printf("%c",f[i]);
+   }
+   }
+}
